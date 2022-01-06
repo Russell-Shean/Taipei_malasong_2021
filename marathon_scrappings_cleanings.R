@@ -200,14 +200,15 @@ half_marathon_df <- half_marathon_df %>%
          # the step above rounded down to the nearest minute
          # the step below subtracts out the number of minutes to leave the number of seconds
          #but the seconds need to be converted from a per 100 to per 60 scale
+         #floor rounds down the nearest integer, bc no one cares about milis of miliseconds here
          
-         min_per_mile_net_s = (min_per_mile_net - floor(min_per_mile_net))*60,
+         min_per_mile_net_s = floor((min_per_mile_net - floor(min_per_mile_net))*60),
          min_per_mile_race_m = floor(min_per_mile_race),
-         min_per_mile_race_s = ( min_per_mile_race - floor(min_per_mile_race) )*60,
+         min_per_mile_race_s = floor(( min_per_mile_race - floor(min_per_mile_race) )*60),
          min_per_km_net_m = floor(min_per_km_net),
-         min_per_km_net_s = (min_per_km_net - floor(min_per_km_net) )*60 ,
+         min_per_km_net_s = floor((min_per_km_net - floor(min_per_km_net) )*60) ,
          min_per_km_race_m = floor(min_per_km_race),
-         min_per_km_race_s = (min_per_km_race - floor(min_per_km_race))*60)
+         min_per_km_race_s = floor((min_per_km_race - floor(min_per_km_race))*60))
 
 
 # remove intermediate data structures
