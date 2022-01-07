@@ -9,6 +9,5 @@ Check out the data folder; I saved you the trouble of scrapping the marathon res
 --------------------------
 # To-Do
 1. Make a Shiny interactive data visualization
-2. Scrape the marathon
-3. Try to build a model to predict times
-4. See if marathon runners run at a faster or slower pace than half-marathon runners
+2. Try to build a model to predict times
+3. See if marathon runners run at a faster or slower pace than half-marathon runners
