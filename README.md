@@ -4,7 +4,7 @@ This code:
 2. Take a preliminary look at the data and looks for trends
 
 # If you just want the data for your own analysis
-Check out the data folder, I saved you the trouble of scrapping the marathon results :)
+Check out the data folder; I saved you the trouble of scrapping the marathon results :)
 
 --------------------------
 # To-Do
